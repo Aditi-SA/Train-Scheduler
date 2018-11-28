@@ -7,6 +7,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- jQuery first, -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
         crossorigin="anonymous">
@@ -18,12 +22,12 @@
 <body>
 
     <div class="container">
-        <div class="jumbotron my-3">
+        <div class="jumbotron my-3" style="color: black; background-color: darkcyan">
             <h1 class="display-2 text-center">Train Time Scheduler</h1>
         </div>
 
         <div class="card border-success">
-            <h5 class="card-header text-white bg-info">Current Train Schedule <button id="AddnewTrain" class="btn btn-danger mx-2">Add
+            <h5 class="card-header text-white bg-info">Current Train Schedule <button id="AddnewTrain" class="btn btn-secondary mx-2">Add
                     Train Schedule</button></h5>
             <div class="card-body">
                 <table class="table table-borderless table-hover text-center">
@@ -52,15 +56,6 @@
         </div>
 
     </div>
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <!--then Popper.js, then Bootstrap JS -->
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>-->
 
     <!-- MomentJS script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>

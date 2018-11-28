@@ -37,7 +37,7 @@ $("#SubmitTrain").on("click", function (event) {
     } else {
         alert("Please enter all fields of the form!")
     }
-    //eForm();
+    
     $("#name").val("");
     $("#destination").val("");
     $("#first").val("");
@@ -54,9 +54,9 @@ database.ref().on("child_added", function (snapshot) {
     // console.log("Current Time: " + currentTime);
 
     var trainName = sv.name;
-    console.log("trainName: " + trainName);
+    //console.log("trainName: " + trainName);
     var destination = sv.destination;
-    console.log("destination: " + destination);
+    //console.log("destination: " + destination);
 
     var trainEveryMinutes = moment.unix(sv.frequency).format("mm");
 
@@ -83,9 +83,3 @@ database.ref().on("child_added", function (snapshot) {
     console.log("Errors handled: " + errorObject.code);
 });
 
-function eForm() {
-    $("#name").val("");
-    $("#destination").val("");
-    $("#first").val("");
-    $("#frequency").val("");
-}
