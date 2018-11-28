@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Train Time Scheduler</title>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+
+    <!-- Firebase js Code -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron my-3">
+            <h1 class="display-2 text-center">Train Time Scheduler</h1>
+        </div>
+
+        <div class="card border-success">
+            <h5 class="card-header text-white bg-info">Current Train Schedule <button id="AddnewTrain" class="btn btn-danger mx-2">Add
+                    Train Schedule</button></h5>
+            <div class="card-body">
+                <table class="table table-borderless table-hover text-center">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>| Train Name |</th>
+                            <th>| Destination |</th>
+                            <th>| Frequency (min) |</th>
+                            <th>| Next Arrival |</th>
+                            <th>| Minutes Away |</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="newtrainData">
+                            <td><input type="text" class="form-control" id="name" aria-describedby="" placeholder=""></td>
+                            <td><input type="text" class="form-control" id="destination" aria-describedby=""
+                                    placeholder=""></td>
+                            <td><input type="text" class="form-control" id="frequency" aria-describedby="" placeholder="ex: 09"></td>
+                            <td><input type="text" class="form-control" id="first" aria-describedby="" placeholder="First Train (HH:mm military time)"></td>
+                            <td><button type="submit" class="btn btn-primary" id="SubmitTrain">Submit</button></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!--then Popper.js, then Bootstrap JS -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>-->
+
+    <!-- MomentJS script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+
+    <!-- Connect to local javascript code -->
+    <script src="js/logic.js"></script>
+</body>
+
+</html>
